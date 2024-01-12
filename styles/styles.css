@@ -1,0 +1,209 @@
+/* IMPORTADO */
+@font-face {
+  font-family: 'Rubik';
+  src: url(../fonts/RubikDoodleShadow-Regular.ttf);
+}
+
+/* A TODO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION, NAVBAR */
+.navbarPrincipal {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(117, 164, 251, 0.503);
+  font-size: 15px;
+}
+
+/* Alinea el contenido de la barra de navegación al centro */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+/* Estilo para el enlace 'Nosotros' con el separador */
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+}
+
+/* BODY */
+.article {
+  font-size: small;
+  font-style: initial;
+  text-align: center;
+}
+
+.titulo {
+  font-family: 'Rubik';
+  font-size: 85px;
+  text-align: center;
+}
+
+.section {
+  text-align: center;
+  padding-block: 10px;
+}
+
+/* GRILLA DE IMAGENES */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  width: 60%;
+  background-color: rgb(117, 164, 251);
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ANIMACION */
+.grid-container {
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.grid-item:hover .description {
+  opacity: 1;
+}
+
+/* CARRUSEL */
+#carouselExampleAutoplaying {
+  display: flex;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+#carouselExampleAutoplaying .carousel-inner img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: rgba(117, 164, 251, 0.503);
+  text-decoration: solid;
+}
+
+/* NORTE */
+.div-section, .section-este, .section-oeste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  padding-bottom: 0;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.3rem;
+}
+
+.section-img-atractivos, iframe  {
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  
+}
+.article-atractivos, .p-sur, .p-este{
+font-size: 1.3rem;
+}
+
+.aside-atractivos, .mapa-sur {
+  background-color: #F1BFC2;
+
+}
+
+.section-conclusion {
+  background-color: rgba(128, 128, 128, 0.278);
+  text-align: center;
+}
+
+/* MEDIA QUERIES PARA DISPOSITIVOS MÁS PEQUEÑOS */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-item:last-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .div-section, .div-oeste {
+    padding: 1rem;
+  }
+
+  .section-img-atractivos {
+    margin-left: 0;
+  }
+}
+/* SUR! */
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.article-imagen, .img-oeste{
+width: 40%;
+margin: 5rem 3rem 3rem ;
+border: 3rem 3rem 3rem;
+display: grid;
+
+}
